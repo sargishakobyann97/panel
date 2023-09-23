@@ -1,0 +1,48 @@
+@import url("./assets/fonts/fonts.scss");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &:not(.vi)::selection {
+        // background-color: #ece0fa00;
+        // color: inherit;
+    }
+}
+
+:root {
+    --m-c: #560bad;
+}
+
+.temporary {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: "Play-400";
+    white-space: nowrap;
+    color: red;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* width */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #6246ea;
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #4631b3;
+}

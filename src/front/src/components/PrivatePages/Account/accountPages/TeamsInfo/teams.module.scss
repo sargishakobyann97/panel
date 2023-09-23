@@ -1,0 +1,58 @@
+.teams_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    .teams_content_bg {
+        display: flex;
+        justify-content: center;
+        width: 0;
+        height: 0;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        animation-name: teams_info_anm;
+        animation-iteration-count: 1;
+        animation-duration: 200ms;
+        animation-fill-mode: forwards;
+
+        .teams_content_wrapper {
+            width: 45%;
+            max-width: 650px;
+            min-width: 538px;
+            padding-top: 52px;
+
+            .back_to_account_btn {
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: #292929;
+                font-size: 12px;
+                font-family: "Inter-400";
+                cursor: pointer;
+                transition-duration: 200ms;
+                margin-bottom: 31px;
+                &:hover {
+                    color: var(--m-c);
+                }
+            }
+        }
+    }
+}
+
+@keyframes teams_info_anm {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
+}

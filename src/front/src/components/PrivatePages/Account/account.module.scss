@@ -1,0 +1,221 @@
+.account_wrapper {
+    overflow-y: auto;
+    padding-left: 10px;
+    // padding-bottom: 40px;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+    .hi_user_name {
+        margin: 82px 0 48px 0;
+        font-family: "Inter-400";
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+        color: #292929;
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        & > span {
+            color: #808080;
+        }
+        .log_out_btn {
+            color: white;
+            height: 25px;
+            width: 25px;
+            border-radius: 15px;
+            padding: 4px 4px 4px 6px;
+            background-color: var(--m-c);
+            cursor: pointer;
+        }
+    }
+
+    .account_pages_wrapper {
+        height: 20px;
+        height: calc(100vh - 162px);
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .account_first_row_wrapper,
+        .account_second_row_wrapper {
+            display: flex;
+            gap: 24px;
+            & > div {
+                background: #ffffff;
+                box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.3);
+                border-radius: 10px;
+                max-height: 318px;
+                height: 16.6vw;
+                max-height: 220px;
+                overflow: hidden;
+                cursor: pointer;
+                transition-duration: 200ms;
+                transition-property: transform;
+                &:hover {
+                    transform: scale(1.01);
+                }
+            }
+            .subscription_sec_wrapper {
+                width: 44.3vw;
+                max-width: 590px;
+                position: relative;
+                .subscription_title {
+                    font-family: "Inter-400";
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 32px;
+                    color: #292929;
+                    margin-top: 30px;
+                    margin-left: 30px;
+                }
+                .subscription_sub_title {
+                    font-family: "Inter-400";
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #808080;
+                    margin-top: 10px;
+                    margin-left: 30px;
+                    & > span {
+                        color: var(--m-c);
+                        font-family: "Inter-500";
+                        font-weight: 500;
+                        text-transform: capitalize;
+                    }
+                }
+                .subscription_active_btn {
+                    display: flex;
+                    width: max-content;
+                    align-items: center;
+                    background: #0f9918;
+                    border-radius: 30px;
+                    font-family: "Inter-400";
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #fff;
+                    height: 34px;
+                    padding: 0 30px;
+                    margin: 30px 0 0 30px;
+                    cursor: pointer;
+                }
+                .subscription_not_active_btn {
+                    background: #808080;
+                }
+                .subscription_media {
+                    width: 120%;
+                    position: absolute;
+                    top: -50px;
+                    right: -160px;
+                }
+            }
+            .balance_sec_wrapper {
+                max-width: 270px;
+                width: 20.2vw;
+                padding: 28px 0 0 24px;
+                position: relative;
+
+                .balance_title {
+                    font-family: "Inter-400";
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 32px;
+                    color: #292929;
+                    margin-bottom: 5px;
+                }
+                .balance_info {
+                    font-family: "Inter-400";
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 36px;
+                    color: #0f9918;
+                }
+                .balance_top_up_btn {
+                    position: absolute;
+                    left: 25px;
+                    bottom: 25px;
+                    font-family: "Inter-500";
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 12px;
+                    color: var(--m-c);
+                }
+                .balance_media {
+                    width: 155%;
+                    position: absolute;
+                    top: -30px;
+                    right: -75%;
+                    transform: rotateZ(12deg);
+                }
+            }
+            .devices_sec_wrapper {
+                max-width: 430px;
+                width: 32.2vw;
+                padding: 36px 0 0 30px;
+                position: relative;
+
+                .devices_title {
+                    font-family: "Inter-400";
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 32px;
+                    color: #292929;
+                }
+                .devices_info {
+                    color: #808080;
+                    font-size: 14px;
+                    font-family: "Inter-400";
+                    line-height: 19px;
+                    margin-top: 6px;
+                }
+                .devices_manage_btn {
+                    color: var(--m-c);
+                    font-size: 14px;
+                    font-family: "Inter-500";
+                    position: absolute;
+                    bottom: 25px;
+                    left: 30px;
+                }
+                .devices_media {
+                    width: 60%;
+                    position: absolute;
+                    right: 15px;
+                    bottom: -42px;
+                }
+            }
+            .teams_sec_wrapper {
+                max-width: 430px;
+                width: 32.2vw;
+                padding: 30px 0 0 30px;
+                position: relative;
+                .teams_title {
+                    font-family: "Inter-400";
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 32px;
+                    color: #292929;
+                }
+                .teams_info {
+                    color: #808080;
+                    font-size: 14px;
+                    font-family: "Inter-400";
+                    line-height: 19px;
+                    margin-top: 6px;
+                }
+                .teams_manage_btn {
+                    color: var(--m-c);
+                    font-size: 14px;
+                    font-family: "Inter-500";
+                    position: absolute;
+                    bottom: 25px;
+                    left: 30px;
+                }
+                .teams_media {
+                    width: 460px;
+                    position: absolute;
+                    right: -135px;
+                    top: -26px;
+                }
+            }
+        }
+    }
+}

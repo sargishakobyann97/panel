@@ -1,0 +1,121 @@
+.non_active_subscriptions_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    .non_active_subscriptions_content_bg {
+        overflow-y: auto;
+        display: flex;
+        justify-content: center;
+        width: 0;
+        height: 0;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        animation-name: non_active_subscriptions_anm;
+        animation-iteration-count: 1;
+        animation-duration: 200ms;
+        animation-fill-mode: forwards;
+
+        .non_active_subscriptions_content_wrapper {
+            width: 45%;
+            max-width: 650px;
+            min-width: 444px;
+            padding-top: 52px;
+            height: fit-content;
+            .back_to_account_btn {
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: #292929;
+                font-size: 12px;
+                font-family: "Inter-400";
+                cursor: pointer;
+                transition-duration: 200ms;
+                margin-bottom: 31px;
+                &:hover {
+                    color: var(--m-c);
+                }
+            }
+
+            .non_active_subs_item {
+                position: relative;
+                border-radius: 16px;
+                background: #fff;
+                box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+                margin-bottom: 24px;
+
+                & > div:nth-of-type(1) {
+                    padding: 25px 0 25px 71px;
+                }
+
+                .subscription_media {
+                    width: 90px;
+                    top: 6px;
+                    left: -10px;
+                    position: absolute;
+                }
+
+                .non_active_subs_item_title {
+                    color: #292929;
+                    font-size: 14px;
+                    font-family: "Inter-500";
+                    line-height: 19px;
+                    & > span {
+                        color: var(--m-c);
+                        text-transform: capitalize;
+                    }
+                }
+
+                .non_active_subs_item_sub_title {
+                    color: #808080;
+                    font-size: 10px;
+                    font-family: "Inter-400";
+                    line-height: 14px;
+                }
+
+                .first_non_active_subs {
+                    color: #808080;
+                    font-size: 12px;
+                    font-family: "Inter-400";
+                    line-height: 14px;
+                    padding: 20px;
+                    margin-top: -5px;
+                    border-top: 1px solid #e8ebed;
+                }
+            }
+
+            .other_subscriptions_and_options {
+                border-radius: 16px;
+                margin: 24px 0;
+                background: var(--m-c);
+                height: 50px;
+                color: #fff;
+                font-size: 14px;
+                font-family: "Inter-400";
+                line-height: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@keyframes non_active_subscriptions_anm {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "sundry": {
+        "signIn": "Sign In",
+        "signUp": "Sign Up",
+        "confirm": "Confirm",
+        "active": "Active",
+        "none": "None",
+        "note_active": "Not Active",
+        "devices": "Devices",
+        "teams": "Teams",
+        "manage": "Manage",
+        "version": "Version",
+        "view": "View",
+        "back": "Back",
+        "unmatch": "Unmatch",
+        "profiles": "Profiles",
+        "privacy_policy": "By registering, you agree to the Terms of Service, Privacy Policy and the Communications Agreement"
+    },
+    "signIn": {
+        "nickOrEmail": "Your Nickname or eMail",
+        "password": "Password",
+        "stay_signed_in": "Stay signed in ",
+        "forgot_your_password": "Forgot your password?",
+        "don't_have_an_account": "Don’t have an account?"
+    },
+    "signUp": {
+        "nickName": "Your Nickname",
+        "email": "Your eMail",
+        "password": "Password",
+        "repeatPassword": "Repeat Password",
+        "stay_signed_in": "Stay signed in ",
+        "already_have_an_account": "Already have an account?",
+        "create_account_btn": "Create Account",
+        "confirmation": {
+            "title": "Require Confirmation",
+            "clue_text": "Enter the verification code that we’ve sent you on ",
+            "back_to_signUp": "Back to Sign Up",
+            "send_code_again": "Send Code Again"
+        }
+    },
+    "mainAside": {
+        "dashboardHome": "Home",
+        "profiles": "Profiles",
+        "proxy": "Proxy",
+        "account": "Account",
+        "cookies": "Cookies",
+        "store": "Store",
+        "notifications": "Notifications",
+        "settings": "Settings"
+    },
+    "account": {
+        "user_name_hi": "Hello",
+        "subscription": "Subscription",
+        "your_active_subscription": "Your active subscription: ",
+        "balance": "Balance",
+        "top_up_btn": "Top Up",
+        "your_active_devices": "Your active devices",
+        "your_active_team": "Your active team ",
+        "subscriptionSec": {
+            "back_btn": "Back to Account",
+            "your_active_subscription": "Your active subscription: ",
+            "the_cost_of_your_tariff_is": "The cost of your tariff is $",
+            "available_profiles": "Available profiles: ",
+            "available_profiles_sub_title": "Profiles that are available to you in your subscription",
+            "available_profiles_left": " left ",
+            "other_subscriptions_and_options": "Other Subscriptions and options",
+            "stop_subscription": "Stop Subscription",
+            "not_active_subscriptions_title": "Your non-active subscriptions",
+            "not_active_subscriptions_sub_title": "It will become active after the end of the active one.",
+            "your_non_active_subscription": "Your non-active subscription: ",
+            "the_subscription_plan_was_purchased_on": "The subscription plan was purchased on ",
+            "first_non_active_subs_text": "We saved this subscription plan. It will become active after the end of the active one."
+        },
+        "devices": {
+            "more_left": "more left",
+            "your_active_devices_text": "Your active devices, which are connected to your account",
+            "current_device": "Current device"
+        }
+    },
+    "profiles": {
+        "your_profiles_title": "Your Profiles",
+        "your_profiles_sub_title": "Create, control and share your profiles"
+    }
+}

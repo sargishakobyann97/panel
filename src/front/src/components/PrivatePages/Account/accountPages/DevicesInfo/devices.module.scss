@@ -1,0 +1,158 @@
+.devices_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    .devices_content_bg {
+        display: flex;
+        justify-content: center;
+        width: 0;
+        height: 0;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        animation-name: devices_info_anm;
+        animation-iteration-count: 1;
+        animation-duration: 200ms;
+        animation-fill-mode: forwards;
+
+        .devices_content_wrapper {
+            width: 45%;
+            max-width: 650px;
+            min-width: 444px;
+            padding-top: 52px;
+
+            .back_to_account_btn {
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: #292929;
+                font-size: 12px;
+                font-family: "Inter-400";
+                cursor: pointer;
+                transition-duration: 200ms;
+                margin-bottom: 31px;
+                &:hover {
+                    color: var(--m-c);
+                }
+            }
+
+            .devices_list_wrapper {
+                border-radius: 16px;
+                background: #fff;
+                box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+                min-height: 77px;
+
+                .devices_list_header {
+                    position: relative;
+                    padding-left: 93px;
+                    height: 77px;
+                    border-bottom: 1px solid #e8ebed;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 5px;
+
+                    & .devices_media {
+                        position: absolute;
+                        top: 17px;
+                        left: 14px;
+                        width: 55px;
+                    }
+
+                    .devices_left_info {
+                        color: #292929;
+                        font-size: 14px;
+                        font-family: "Inter-500";
+                        line-height: 19px;
+                        & > span {
+                            color: var(--m-c);
+                        }
+                    }
+
+                    .devices_left_info_sub_title {
+                        color: #808080;
+                        font-size: 10px;
+                        font-family: "Inter-400";
+                        line-height: 14px;
+                    }
+                }
+
+                .devices_items_wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    padding: 20px 26px 28px;
+                    .devices_item {
+                        display: grid;
+                        grid-template-columns: 67px 1fr auto;
+                        align-items: center;
+                        .devices_item_media {
+                            width: 32px;
+                            width: 32px;
+                        }
+
+                        .indefinite_system {
+                            width: 32px;
+                            height: 32px;
+                            background-color: var(--m-c);
+                            border-radius: 16px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            font-family: "Inter-400";
+                        }
+
+                        .devices_item_body {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 4px;
+                            overflow: hidden;
+
+                            .devices_item_current {
+                                color: #0f9918;
+                                font-size: 8px;
+                                font-family: "Inter-400";
+                            }
+                            .devices_item_os {
+                                color: #292929;
+                                font-size: 14px;
+                                font-family: "Inter-500";
+                            }
+                            .devices_item_version {
+                                color: #808080;
+                                font-size: 9px;
+                                font-family: "Inter-400";
+                            }
+                        }
+
+                        .unmatch_btn {
+                            cursor: pointer;
+                            color: var(--m-c);
+                            font-size: 10px;
+                            font-family: "Inter-500";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes devices_info_anm {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
+}
